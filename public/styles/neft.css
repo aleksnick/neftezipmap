@@ -42,10 +42,10 @@
 
 .neft__note_active {
   background: #dc2f2f;
-  filter: alpha(Opacity=90);
-  -moz-opacity: 0.9;
-  -khtml-opacity: 0.9;
-  opacity: 0.9;
+  filter: alpha(Opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .neft__note_active .neft__ul {
@@ -58,9 +58,9 @@
 
 .neft__caption {  
   font-family: 'bigcity_grotesque_promedium';
-  font-size: 14px;
+  font-size: 16px;
   color: #dc2f2f;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .neft__ul {
@@ -71,7 +71,7 @@
 .neft__ul .neft__link {
   font-family: 'bigcity_grotesque_proregular';
   /*font-family: 'Calibri';*/
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   padding: 5px 15px 5px 15px;
   margin-left: -15px;

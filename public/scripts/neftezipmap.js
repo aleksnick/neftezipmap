@@ -11,16 +11,16 @@ $(document).ready(function() {
 
       $('.neft__item').each(function(i, el) {
         if (!$(el).hasClass(target)) {
-          $(el).hide(100);
+          $(el).hide(200);
         }
       }); 
-      $('.neft__item.' + target).show(100).addClass('neft__item_gif');
+      $('.neft__item.' + target).show(200).addClass('neft__item_gif');
     });
 
     $(document).on('mouseleave', '.neft__note', function(e) {
       $(this).removeClass('neft__note_active');
 
-      $('.neft__item').show(100).removeClass('neft__item_gif');
+      $('.neft__item').show(200).removeClass('neft__item_gif');
     });
 
   }
