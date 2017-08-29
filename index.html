@@ -21,6 +21,8 @@
 
 <script type="text/javascript" src="public/scripts/jquery.min.js" ></script>
 <script type="text/javascript" src="public/scripts/bootstrap.min.js" ></script>
+  
+<script type="text/javascript" src="public/scripts/snap.svg-min.js" ></script>
 <script type="text/javascript" src="public/scripts/neftezipmap.js" ></script>
 
 </head>
@@ -31,38 +33,10 @@
 <div class="container-fluid">
 
   <div class="neft">
+    <svg class="neft__svg"></svg>
 
-    <!--
-
-    <div class="neft__item zapchasti">
-    </div>
-
-    <div class="neft__item nasos">
-    </div>
-
-    <div class="neft__item agregatu">
-    </div>
-
-    <div class="neft__item manifold">
-    </div>
-
-    <div class="neft__item service_remont">
-    </div>
-
-    <div class="neft__item kachalka">
-    </div>
-
-    <div class="neft__item kluch">
-    </div>
-
-    <div class="neft__item pult">
-    </div>
-
-    -->
-
-
-    <div class="neft__note stanki">
-      <a href="#" data-target="kachalka" class="neft__caption">Станки качалки</a>
+    <div class="neft__note stanki" data-target="kachalka">
+      <a href="#" class="neft__caption">Станки качалки</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <a href="#" class="neft__link nav-link">Множество городов</a>
@@ -82,8 +56,8 @@
       </ul>
     </div>
 
-    <div class="neft__note zapchasti">
-      <a href="#" data-target="zapchasti" class="neft__caption">Запасные части</a>
+    <div class="neft__note zapchasti" data-target="zapchasti">
+      <a href="#" class="neft__caption">Запасные части</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <a href="#" class="neft__link nav-link">В ряде стран под</a>
@@ -106,8 +80,8 @@
       </ul>
     </div>
 
-    <div class="neft__note pult">
-      <a href="#" data-target="pult" class="neft__caption">Пульт</a>
+    <div class="neft__note pult" data-target="pult">
+      <a href="#" class="neft__caption">Пульт</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <a href="#" class="neft__link nav-link">В ряде стран под</a>
@@ -124,29 +98,8 @@
       </ul>
     </div>
 
-    <div class="neft__note kluch">
-      <a href="#" data-target="kluch" class="neft__caption">Ключи буровые АКБ</a>
-      <ul class="neft__ul nav nav-pills nav-stacked">
-        <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
-        </li>
-        <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
-        </li>
-        <li>
-          <a href="#" class="neft__link nav-link">Статьи подпадают</a>
-        </li>
-        <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
-        </li>
-        <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="neft__note kachalka">
-      <a href="#" data-target="kachalka" class="neft__caption">Глубинные штанговые насосы</a>
+    <div class="neft__note kluch" data-target="kluch">
+      <a href="#" class="neft__caption">Ключи буровые АКБ</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <a href="#" class="neft__link nav-link">В ряде стран под</a>
@@ -158,52 +111,22 @@
           <a href="#" class="neft__link nav-link">Статьи подпадают</a>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
-        </li>
-        <li>
           <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
         </li>
         <li>
           <a href="#" class="neft__link nav-link">В ряде стран под</a>
-        </li>
-        <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
         </li>
       </ul>
     </div>
 
-    <div class="neft__note service_remont">
-      <a href="#" data-target="service_remont" class="neft__caption">Сервис и ремонт</a>
+    <div class="neft__note kachalka" data-target="kachalka">
+      <a href="#" class="neft__caption">Глубинные штанговые насосы</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <a href="#" class="neft__link nav-link">В ряде стран под</a>
         </li>
         <li>
           <a href="#" class="neft__link nav-link">Определение случайной</a>
-        </li>
-        <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="neft__note agregatu">
-      <a href="#" data-target="agregatu" class="neft__caption">Цементировочные агрегаты</a>
-      <ul class="neft__ul nav nav-pills nav-stacked">
-        <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
-        </li>
-        <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="neft__note nasos">
-      <a href="#" data-target="nasos" class="neft__caption">Насосное оборудование<br>типа НБ</a>
-      <ul class="neft__ul nav nav-pills nav-stacked">
-        <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
         </li>
         <li>
           <a href="#" class="neft__link nav-link">Статьи подпадают</a>
@@ -217,11 +140,62 @@
         <li>
           <a href="#" class="neft__link nav-link">В ряде стран под</a>
         </li>
+        <li>
+          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+        </li>
       </ul>
     </div>
 
-    <div class="neft__note manifold">
-      <a href="#" data-target="manifold" class="neft__caption">Манифольд</a>
+    <div class="neft__note service_remont" data-target="service_remont">
+      <a href="#" class="neft__caption">Сервис и ремонт</a>
+      <ul class="neft__ul nav nav-pills nav-stacked">
+        <li>
+          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+        </li>
+        <li>
+          <a href="#" class="neft__link nav-link">Определение случайной</a>
+        </li>
+        <li>
+          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="neft__note agregatu" data-target="agregatu">
+      <a href="#" class="neft__caption">Цементировочные агрегаты</a>
+      <ul class="neft__ul nav nav-pills nav-stacked">
+        <li>
+          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+        </li>
+        <li>
+          <a href="#" class="neft__link nav-link">Определение случайной</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="neft__note nasos" data-target="nasos">
+      <a href="#" class="neft__caption">Насосное оборудование<br>типа НБ</a>
+      <ul class="neft__ul nav nav-pills nav-stacked">
+        <li>
+          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+        </li>
+        <li>
+          <a href="#" class="neft__link nav-link">Статьи подпадают</a>
+        </li>
+        <li>
+          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+        </li>
+        <li>
+          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+        </li>
+        <li>
+          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="neft__note manifold" data-target="manifold">
+      <a href="#" class="neft__caption">Манифольд</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <a href="#" class="neft__link nav-link">Определение случайной</a>

@@ -31,13 +31,19 @@
   left: 50%;
   margin-left: -640px;
   background: url('../images/background_gray.png') no-repeat left top #fff;
+  /* border: #333 solid 1px; */
+}
+
+.neft__svg {
+  width: 1280px;
+  height: 745px;  
 }
 
 .neft__note {
   position: absolute;
   padding: 20px 30px 20px 30px;
   width: 230px;
-  margin-left: -20px;
+  /*margin-left: -20px;*/
 }
 
 .neft__note_active {
@@ -100,13 +106,13 @@
 }
 
 .neft__note.manifold {
-  left: 840px;
-  top: -20px;
+  left: 690px;
+  top: 340px;
 }
 
 .neft__note.nasos {
-  left: 1040px;
-  top: 20px;
+  left: 800px;
+  top: 200px;
 }
 
 .neft__note.kachalka {
@@ -115,77 +121,17 @@
 }
 
 .neft__note.kluch {
-  left: 240px;
-  top: 660px;
+  left: 500px;
+  top: 510px;
 }
 
 .neft__note.pult {
-  left: 840px;
-  top: 660px;
+  left: 730px;
+  top: 500px;
 }
 
 .neft__note.zapchasti {
-  left: 1040px;
-  top: 560px;
+  left: 940px;
+  top: 360px;
 }
-
-
-.neft__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: left top;  
-}
-
-.neft__item.zapchasti {
-  background-image: url('../images/zapchasti_color.png');
-}
-
-.neft__item.nasos {
-  background-image: url('../images/nasos_color.png');
-}
-
-.neft__item.agregatu {
-  background-image: url('../images/agregatu_color.png');
-}
-
-.neft__item.manifold {
-  background-image: url('../images/manifold_color.png');
-}
-
-.neft__item.service_remont {
-  background-image: url('../images/service_remont_color.png');
-}
-
-.neft__item.kachalka {
-  background-image: url('../images/kachalka_color.png');
-}
-
-.neft__item.neft__item_gif.kachalka {
-  background-image: url('../images/kachalka_color.gif');
-}
-
-.neft__item.kluch {
-  background-image: url('../images/kluch_color.png');
-}
-
-.neft__item.neft__item_gif.kluch {
-  background-image: url('../images/kluch_color.gif');
-}
-
-.neft__item.pult {
-  background-image: url('../images/pult_color.png');
-}
-
-.neft__item.neft__item_gif.pult {
-  background-image: url('../images/pult_color.gif');
-}
-
-
-
-
-
 
