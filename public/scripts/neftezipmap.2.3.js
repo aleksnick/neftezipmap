@@ -33,8 +33,11 @@ $(document).ready(function() {
     var isMouseOnObject = function(e) {
       var res = false;
       $.each(neftObejectsParams, function(name, params) {
-        // console.log(e, e.offsetX, e.offsetY);
         if (Snap.path.isPointInside(params.edge, getMouseX(e), getMouseY(e))) {
+          state.activeObject = name;
+          res = true;
+        }
+        if (Snap.path.isPointInside(params.edge, getMouseX(e)+1, getMouseY(e)+1)) {
           state.activeObject = name;
           res = true;
         }
@@ -64,22 +67,55 @@ $(document).ready(function() {
 
     var isMouseOnNote = function(name, e) {
       var res = false;
-      var $note = $('.neft__note.' + name);
-      var path = getPathOfNote(name);
-      if (Snap.path.isPointInside(path, getMouseX(e), getMouseY(e))) {
-        res = true;
+      var $note;
+      var path;
+
+      if (name !== null) {
+        $note = $('.neft__note.' + name);
+        path = getPathOfNote(name);
+        if (Snap.path.isPointInside(path, getMouseX(e), getMouseY(e))) {
+          res = true;
+        }
       }
       return res;
     };
 
+    var hideBackground = function() {
+      background.animate({
+        'opacity': 0.5
+      }, 300, mina.easein());      
+    };
+
+    var showBackground = function() {
+      background.animate({
+        'opacity': 1
+      }, 300, mina.easein());      
+    };
+
     var showObject = function(name) {
       var $note = $('.neft__note.' + name);
+
+      hideBackground();
+
+      neftObjects[name].png.animate({
+        'opacity': 1
+      }, 300, mina.easein());
 
       replacePngToGif(name);
 
       hideAllObjects(name);
 
       showNote(name);
+    };
+
+    var clearMap = function() {
+      $.each(neftObejectsParams, function(name, params) {
+        if (params.gif) {
+          if (neftObjects[name].gif.attr('opacity') == 1) {
+            neftObjects[name].gif.attr('opacity', 0);
+          }          
+        }
+      });
     };
 
     var showAllObjects = function(name) {
@@ -95,6 +131,8 @@ $(document).ready(function() {
     var hideObject = function(name) {
       var $note = $('.neft__note.' + name);
 
+      showBackground();
+
       replaceGifToPng(name);
 
       showAllObjects(name);
@@ -105,11 +143,14 @@ $(document).ready(function() {
     };
 
     var hideAllObjects = function(name) {
-      $.each(neftObejectsParams, function(objName) {
+      $.each(neftObejectsParams, function(objName, objParams) {
         if (objName !== name) {
           neftObjects[objName].png.animate({
             'opacity': 0
           }, 300, mina.easein());
+          if (objParams.gif) {
+            neftObjects[objName].gif.attr('opacity', 0);
+          }
         }
       });
     };
@@ -117,25 +158,29 @@ $(document).ready(function() {
     var replacePngToGif = function(name) {
       var params = neftObejectsParams[name];
       if (params.gif) {
-        neftObjects[name].gif.attr('opacity', '1');
-        neftObjects[name].png.attr('opacity', '0');
-      } else {
-        neftObjects[name].png.attr('opacity', '1');
+        neftObjects[name].png.attr('opacity', 0);
+        neftObjects[name].gif.attr('opacity', 1);
       }
     };
 
     var replaceGifToPng = function(name) {
       var params = neftObejectsParams[name];
       if (params.gif) {
-        neftObjects[name].png.attr('opacity', '1');
-        neftObjects[name].gif.attr('opacity', '0');
+        neftObjects[name].gif.attr('opacity', 0);
+        neftObjects[name].png.attr('opacity', 1);
       }
     };
 
     var showNote = function(name) {
       var $note = $('.neft__note.' + name);
-      $('.neft__note').removeClass('neft__note_active');
       $note.addClass('neft__note_active');
+      $('.neft__note').each(function(i) {
+        if (!$(this).hasClass(name)) {
+          if ($(this).hasClass('neft__note_active')) {
+            $(this).removeClass('neft__note_active');
+          }
+        }
+      });
     };
 
     var hideNote = function(name) {
@@ -148,16 +193,18 @@ $(document).ready(function() {
     });
 
     $(document).on('mousemove', $neft, function(e) {
-      if (isMouseOnObject(e)) {
-        // isObjectActive(state.activeObject);
-        if (!isNoteOpen(state.activeObject) || !isObjectActive(state.activeObject)) {
+      if ((state.activeObject !== null) && (isMouseOnNote(state.activeObject, e))) {
+        if (!isObjectActive(state.activeObject)) {
           showObject(state.activeObject);
         }
       } else {
-        if (state.activeObject !== null) {
-          if (isNoteOpen(state.activeObject)) {
+        if (isMouseOnObject(e)) {
+          showObject(state.activeObject);
+        } else {
+          if (state.activeObject !== null) {
             if (!isMouseOnNote(state.activeObject, e)) {  
               hideObject(state.activeObject);
+              clearMap();
             }
           }
         }
@@ -226,22 +273,21 @@ $(document).ready(function() {
 
     };
 
+    var background = s.image('public/images/background_gray.png', 0, 0, $neft.width(), $neft.height());
 
     $.each(neftObejectsParams, function(name, params) {
       var objPng = s.image(params.png, 0, 0, $neft.width(), $neft.height());
-      var objGif;
       neftObjects[name] = {
         png: objPng
       };
       
       if (params.gif) {
-        objGif = s.image(params.gif, 0, 0, $neft.width(), $neft.height()).attr('opacity', '0');
+        neftObjects[name].gif = s.image(params.gif, 0, 0, $neft.width(), $neft.height()).attr('opacity', '0');
       }
-      neftObjects[name].gif = objGif;
     });
 
     $.each(neftObejectsParams, function(name, params) {
-      var objEdge = s.path(params.edge).attr('opacity', '0');
+      var objEdge = s.path(params.edge).attr('opacity', 0);
 
       neftObjects[name].edge = objEdge;
     

@@ -30,7 +30,7 @@
   top: 100px;
   left: 50%;
   margin-left: -640px;
-  background: url('../images/background_gray.png') no-repeat left top #fff;
+  /*background: url('../images/background_gray.png') no-repeat left top #fff;*/
   /* border: #333 solid 1px; */
 }
 
@@ -47,11 +47,12 @@
 }
 
 .neft__note_active {
-  background: #dc2f2f;
+  background: #e20613;
   filter: alpha(Opacity=80);
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   opacity: 0.8;
+  box-shadow: 0 25px 55px -10px #e20613;
 }
 
 .neft__note_active .neft__ul {
@@ -65,7 +66,7 @@
 .neft__caption {  
   font-family: 'bigcity_grotesque_promedium';
   font-size: 16px;
-  color: #dc2f2f;
+  color: #e20613;
   /*font-weight: bold;*/
 }
 
@@ -91,18 +92,18 @@
 
 
 .neft__note.stanki {
-  left: 40px;
-  top: 170px;
+  left: 180px;
+  top: 220px;
 }
 
 .neft__note.service_remont {
-  left: 240px;
-  top: 40px;
+  left: 320px;
+  top: 50px;
 }
 
 .neft__note.agregatu {
-  left: 480px;
-  top: -40px;
+  left: 670px;
+  top: -30px;
 }
 
 .neft__note.manifold {
@@ -117,7 +118,7 @@
 
 .neft__note.kachalka {
   left: 160px;
-  top: 560px;
+  top: 540px;
 }
 
 .neft__note.kluch {
