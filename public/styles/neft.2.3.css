@@ -27,7 +27,7 @@
   float: left;
   width: 1280px;
   height: 745px;
-  top: 100px;
+  top: 300px;
   left: 50%;
   margin-left: -640px;
   /*background: url('../images/background_gray.png') no-repeat left top #fff;*/
@@ -37,6 +37,10 @@
 .neft__svg {
   width: 1280px;
   height: 745px;  
+}
+
+.neft__map {
+  height: 800px;
 }
 
 .neft__note {
