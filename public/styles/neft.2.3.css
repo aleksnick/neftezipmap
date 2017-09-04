@@ -21,13 +21,228 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'elektra_text_probold';
+    src: url('../fonts/elektratextbold-webfont.eot');
+    src: url('../fonts/elektratextbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektratextbold-webfont.woff') format('woff'),
+         url('../fonts/elektratextbold-webfont.ttf') format('truetype'),
+         url('../fonts/elektratextbold-webfont.svg#elektra_text_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'elektra_text_probold_italic';
+    src: url('../fonts/elektratextbolditalic-webfont.eot');
+    src: url('../fonts/elektratextbolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektratextbolditalic-webfont.woff') format('woff'),
+         url('../fonts/elektratextbolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/elektratextbolditalic-webfont.svg#elektra_text_probold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'elektra_text_proitalic';
+    src: url('../fonts/elektratextitalic-webfont.eot');
+    src: url('../fonts/elektratextitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektratextitalic-webfont.woff') format('woff'),
+         url('../fonts/elektratextitalic-webfont.ttf') format('truetype'),
+         url('../fonts/elektratextitalic-webfont.svg#elektra_text_proitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'elektra_light_proregular';
+    src: url('../fonts/elektratextlight-webfont.eot');
+    src: url('../fonts/elektratextlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektratextlight-webfont.woff') format('woff'),
+         url('../fonts/elektratextlight-webfont.ttf') format('truetype'),
+         url('../fonts/elektratextlight-webfont.svg#elektra_light_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.space {
+  display: block;
+  clear: both;
+}
+
+.space__sep10 {
+  height: 10px;
+}
+
+.space__sep20 {
+  height: 20px;
+}
+
+.space__sep30 {
+  height: 30px;
+}
+
+.space__sep40 {
+  height: 40px;
+}
+
+.space__sep50 {
+  height: 50px;
+}
+
+.space__sep60 {
+  height: 60px;
+}
+
+.space__sep70 {
+  height: 70px;
+}
+
+.space__sep80 {
+  height: 80px;
+}
+
+.header .header__logo {
+  padding-left: 0;
+}
+
+.header .header__caption {
+  font-family: 'elektra_light_proregular';
+  font-size: 15px;
+  color: #6e6e6e;
+}
+
+.header .header__phone {
+  font-family: 'elektra_text_probold';
+  font-size: 16px;
+  color: #000;
+}
+
+.header .header__email {
+  font-family: 'elektra_light_proregular';
+  font-size: 16px;
+  color: #000;
+}
+
+.menu .menu__link {
+  font-family: 'elektra_text_probold';
+  font-size: 15px;
+  color: #000;
+  border-bottom: #e20613 1px dashed;
+}
+
+.menu .menu__link:hover {
+  color: #e20613;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.landing h1 {
+  font-family: 'elektra_text_probold';
+  font-size: 45px;
+  color: #000;  
+  padding-left: 80px;
+  border-left: #e20613 5px solid;
+}
+
+.thesis h3 {
+  font-family: 'elektra_text_probold';
+  font-size: 24px;
+  color: #000;  
+  padding-left: 65px;
+  background: url('../images/neft_red_square.png') no-repeat left top #fff;
+}
+
+.request .request__body {
+  box-shadow: 0 50px 50px -40px #e20613;
+}
+
+.request .request__form {
+  padding: 30px 20px 30px 20px;
+  background: #e20613;  
+}
+
+.request h4 {
+  font-family: 'elektra_text_probold';
+  font-size: 24px;
+  color: #fff;
+  margin-top: 0;
+}
+
+.request p {
+  font-family: 'elektra_light_proregular';
+  font-size: 14px;
+  color: #fff;
+  margin-top: 0;
+}
+
+.request .request__submit {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.request .request__submit_button {
+  font-family: 'elektra_text_probold';
+  font-size: 22px;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 0;
+}
+
+.request .request__submit_button:hover {
+  color: #e20613;
+  background: #f7f7f7;
+}
+
+.clients h2 {
+  font-family: 'elektra_text_probold';
+  font-size: 32px;
+  color: #000;  
+  padding-left: 60px;
+}
+
+.clients__item .clients__icon {
+  display: block;
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: 30px 100px 10px 0;
+
+}
+
+.clients__item .clients__icon.clients__drilling_company {
+  background: url('../images/neft_clients.png') no-repeat 0 0;
+}
+
+.clients__item .clients__icon.clients__extracting_company {
+  background: url('../images/neft_clients.png') no-repeat -64px 0;
+}
+
+.clients__item .clients__icon.clients__oilfield_company {
+  background: url('../images/neft_clients.png') no-repeat -128px 0;
+}
+
+.clients__item .clients__icon.clients__krc_company {
+  background: url('../images/neft_clients.png') no-repeat -192px 0;
+}
+
+.clients__item h4 {
+  font-family: 'elektra_text_probold';
+  font-size: 15px;
+  color: #000;  
+}
+
 .neft {
   position: absolute;
   display: block;
   float: left;
   width: 1280px;
   height: 745px;
-  top: 300px;
+  top: 440px;
   left: 50%;
   margin-left: -640px;
   /*background: url('../images/background_gray.png') no-repeat left top #fff;*/
@@ -139,4 +354,5 @@
   left: 940px;
   top: 360px;
 }
+
 
