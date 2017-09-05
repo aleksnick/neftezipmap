@@ -105,6 +105,22 @@
   height: 80px;
 }
 
+.space__sep90 {
+  height: 90px;
+}
+
+.space__sep100 {
+  height: 100px;
+}
+
+.space__sep110 {
+  height: 110px;
+}
+
+.space__sep120 {
+  height: 120px;
+}
+
 .header .header__logo {
   padding-left: 0;
 }
@@ -185,10 +201,11 @@
 }
 
 .request .request__submit_button {
-  font-family: 'elektra_text_probold';
+  font-family: 'elektra_light_proregular';
   font-size: 22px;
   color: #fff;
   background: #000;
+  padding: 20px 0 20px 0;
   border: none;
   border-radius: 0;
 }
@@ -205,29 +222,35 @@
   padding-left: 60px;
 }
 
+.clients .clients__caption {
+  display: block;
+  clear: both;
+}
+
 .clients__item .clients__icon {
   display: block;
   float: left;
   width: 64px;
   height: 64px;
-  margin: 30px 100px 10px 0;
-
+  margin: 30px 0 10px 0;
+  background-image: url('../images/neft_clients.png');
+  background-repeat: no-repeat;
 }
 
-.clients__item .clients__icon.clients__drilling_company {
-  background: url('../images/neft_clients.png') no-repeat 0 0;
+.clients__item .clients__icon.icon__drilling_company {
+  background-position: 0 0;
 }
 
-.clients__item .clients__icon.clients__extracting_company {
-  background: url('../images/neft_clients.png') no-repeat -64px 0;
+.clients__item .clients__icon.icon__extracting_company {
+  background-position: -64px 0;
 }
 
-.clients__item .clients__icon.clients__oilfield_company {
-  background: url('../images/neft_clients.png') no-repeat -128px 0;
+.clients__item .clients__icon.icon__oilfield_company {
+  background-position: -128px 0;
 }
 
-.clients__item .clients__icon.clients__krc_company {
-  background: url('../images/neft_clients.png') no-repeat -192px 0;
+.clients__item .clients__icon.icon__krc_company {
+  background-position: -192px 0;
 }
 
 .clients__item h4 {
@@ -235,6 +258,173 @@
   font-size: 15px;
   color: #000;  
 }
+
+.specialization h2 {
+  font-family: 'elektra_text_probold';
+  font-size: 32px;
+  color: #000;  
+  padding-left: 50px;
+}
+
+.specialization h4 {
+  font-family: 'elektra_text_probold';
+  white-space: nowrap;
+  font-size: 15px;
+  color: #000;
+}
+
+.specialization ul {
+  display: block;
+  float: left;
+  margin-left: -15px;
+  padding-left: 0;
+}
+
+.specialization li {
+  font-family: 'bigcity_grotesque_proregular';
+  font-size: 14px;
+  color: #363636;
+  padding: 5px 15px 5px 15px;
+  background: url('../images/neft_specialization_dot.png') no-repeat 0 10px;
+  list-style: none;
+}
+
+.range {
+  background: #fbfbfb;
+  padding: 40px;
+}
+
+.range h2 {
+  font-family: 'elektra_text_probold';
+  font-size: 45px;
+  color: #000;  
+  padding-left: 50px;
+}
+
+.range h4 {
+  font-family: 'elektra_text_probold';
+  font-size: 15px;
+  color: #000;  
+}
+
+.range .range__row {
+  background: url('../images/neft_range_line.png') no-repeat 0 10px;  
+}
+
+.advantages h2 {
+  font-family: 'elektra_text_probold';
+  font-size: 32px;
+  color: #000;  
+  padding-left: 50px;  
+}
+
+.advantages .advantages__caption {
+  display: block;
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.advantages__item h4 {
+  font-family: 'elektra_text_probold';
+  font-size: 15px;
+  color: #000;  
+}
+
+.advantages__item .advantages__text {
+  font-family: 'bigcity_grotesque_proregular';
+  font-size: 14px;
+  color: #363636;
+}
+
+.advantages__item .advantages__icon {
+  display: block;
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: 30px 0 10px 0;
+  background-image: url('../images/neft_clients.png');
+  background-repeat: no-repeat;
+}
+
+.advantages__item .advantages__icon.icon__goodprices {
+  background-position: -256px 0;
+}
+
+.advantages__item .advantages__icon.icon__clientcentered {
+  background-position: -320px 0;
+}
+
+.advantages__item .advantages__icon.icon__pricedelay {
+  background-position: -384px 0;
+}
+
+.advantages__item .advantages__icon.icon__fastshipping {
+  background-position: -448px 0;
+}
+
+.advantages__item .advantages__icon.icon__sale {
+  background-position: -512px 0;
+}
+
+.advantages__item .advantages__icon.icon__instock {
+  background-position: -576px 0;
+}
+
+.how_we_work h2 {
+  font-family: 'elektra_text_probold';
+  font-size: 32px;
+  color: #000;  
+  padding-left: 50px;
+}
+
+.how_we_work ul {
+  padding: 0;
+}
+
+.how_we_work li {
+  display: block;
+  float: left;
+  clear: both;
+  height: 106px;
+  list-style: none;
+  margin-bottom: 2px;
+}
+
+.how_we_work__item {
+  padding-left: 140px;
+}
+
+.how_we_work__text {
+  font-family: 'elektra_text_probold';
+  font-size: 15px;
+  color: #000;  
+  padding-top: 35px;
+}
+
+.how_we_work__number {
+  font-family: 'bigcity_grotesque_proregular';
+  font-size: 11px;
+  color: #959595;
+  padding-top: 37px;
+}
+
+.how_we_work__item .how_we_work__icon {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 106px;
+  background-image: url('../images/neft_how_we_work_arrows.png');
+  background-repeat: no-repeat;
+}
+
+.how_we_work__item .how_we_work__icon.icon__arrow_red {
+  background-position: 0 0;
+}
+
+.how_we_work__item .how_we_work__icon.icon__arrow_black {
+  background-position: -10px 0;
+}
+
 
 .neft {
   position: absolute;
@@ -301,11 +491,11 @@
   color: #fff;
   padding: 5px 15px 5px 15px;
   margin-left: -15px;
-  background: url('../images/neft_ul_dot.png') no-repeat 0 9px;
+  background: url('../images/neft_ul_dot.png') no-repeat 0 11px;
 }
 
 .neft__ul .neft__link:hover {
-  background: url('../images/neft_ul_dot.png') no-repeat 0 9px;
+  background: url('../images/neft_ul_dot.png') no-repeat 0 11px;
   text-decoration: underline;
 }  
 
