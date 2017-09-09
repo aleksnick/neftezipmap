@@ -9,6 +9,8 @@ $(document).ready(function() {
 
     var $neft = $('.neft');
     var s = Snap(".neft__svg");
+    var w = 1280;
+    var h = 745;
 
     var neftObjects = new Array();
 
@@ -188,9 +190,9 @@ $(document).ready(function() {
       $note.removeClass('neft__note_active');
     };
 
-    $(document).on('click', $neft, function(e) {
-      console.log(e.offsetX, e.offsetY);
-    });
+    // $(document).on('click', $neft, function(e) {
+    //   console.log(e.offsetX, e.offsetY);
+    // });
 
     $(document).on('mousemove', $neft, function(e) {
       if ((state.activeObject !== null) && (isMouseOnNote(state.activeObject, e))) {
@@ -273,18 +275,21 @@ $(document).ready(function() {
 
     };
 
-    var background = s.image('public/images/background_gray.png', 0, 0, $neft.width(), $neft.height());
+    var background = s.image('public/images/background_gray.png', 0, 0, w, h);
+
 
     $.each(neftObejectsParams, function(name, params) {
-      var objPng = s.image(params.png, 0, 0, $neft.width(), $neft.height());
+      var objPng = s.image(params.png, 0, 0, w, h);
       neftObjects[name] = {
         png: objPng
       };
       
       if (params.gif) {
-        neftObjects[name].gif = s.image(params.gif, 0, 0, $neft.width(), $neft.height()).attr('opacity', '0');
+        neftObjects[name].gif = s.image(params.gif, 0, 0, w, h).attr('opacity', '0');
       }
     });
+
+    var background_lines = s.image('public/images/map_lines.png', 0, 0, w, h);
 
     $.each(neftObejectsParams, function(name, params) {
       var objEdge = s.path(params.edge).attr('opacity', 0);
@@ -296,5 +301,9 @@ $(document).ready(function() {
   };
 
   var neft = new NefteZipMap();
+
+
+  $('.menu').onePageNav();
+  $('.neft__note').onePageNav();
 
 });

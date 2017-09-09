@@ -68,6 +68,25 @@
     font-style: normal;
 }
 
+
+/*
+.col-md-2 {
+  width: 200px;
+}
+
+.col-md-4 {
+  width: 400px;
+}
+
+.col-md-6 {
+  width: 600px;
+}
+
+.row {
+  width: 1200px;
+}
+*/
+
 .space {
   display: block;
   clear: both;
@@ -123,24 +142,32 @@
 
 .header .header__logo {
   padding-left: 0;
+  min-width: 180px;
 }
 
 .header .header__caption {
   font-family: 'elektra_light_proregular';
   font-size: 15px;
   color: #6e6e6e;
+  padding-left: 0;
 }
 
 .header .header__phone {
   font-family: 'elektra_text_probold';
   font-size: 16px;
   color: #000;
+  padding-left: 0;
 }
 
 .header .header__email {
   font-family: 'elektra_light_proregular';
   font-size: 16px;
   color: #000;
+  padding-left: 0;
+}
+
+.menu .menu__col {
+  padding-left: 0;
 }
 
 .menu .menu__link {
@@ -156,6 +183,10 @@
   text-decoration: none;
 }
 
+.landing .landing__col {
+  padding-left: 0;
+}
+
 .landing h1 {
   font-family: 'elektra_text_probold';
   font-size: 45px;
@@ -164,12 +195,16 @@
   border-left: #e20613 5px solid;
 }
 
+.thesis .thesis__item {
+  padding-left: 0;
+}
+
 .thesis h3 {
   font-family: 'elektra_text_probold';
   font-size: 24px;
   color: #000;  
   padding-left: 65px;
-  background: url('../images/neft_red_square.png') no-repeat left top #fff;
+  background: url('../images/neft_red_square.png') no-repeat left top;
 }
 
 .request .request__body {
@@ -237,6 +272,10 @@
   background-repeat: no-repeat;
 }
 
+.clients .clients__col {
+  padding-left: 0;
+}
+
 .clients__item .clients__icon.icon__drilling_company {
   background-position: 0 0;
 }
@@ -276,15 +315,18 @@
 .specialization ul {
   display: block;
   float: left;
-  margin-left: -15px;
+  padding-left: 0;
+}
+
+.specialization .specialization__col {
   padding-left: 0;
 }
 
 .specialization li {
-  font-family: 'bigcity_grotesque_proregular';
+  font-family: 'elektra_light_proregular';
   font-size: 14px;
   color: #363636;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px 5px 25px;
   background: url('../images/neft_specialization_dot.png') no-repeat 0 10px;
   list-style: none;
 }
@@ -305,10 +347,16 @@
   font-family: 'elektra_text_probold';
   font-size: 15px;
   color: #000;  
+  max-width: 160px;
 }
 
-.range .range__row {
-  background: url('../images/neft_range_line.png') no-repeat 0 10px;  
+.range .range__col {
+  padding-left: 0;
+}
+
+.range .range__text {
+  max-width: 160px;
+  line-height: 30px;
 }
 
 .advantages h2 {
@@ -324,6 +372,11 @@
   padding-bottom: 10px;
 }
 
+.advantages .advantages__col {
+  height: 200px;
+  padding-left: 0;
+}
+
 .advantages__item h4 {
   font-family: 'elektra_text_probold';
   font-size: 15px;
@@ -331,9 +384,10 @@
 }
 
 .advantages__item .advantages__text {
-  font-family: 'bigcity_grotesque_proregular';
+  font-family: 'elektra_light_proregular';
   font-size: 14px;
   color: #363636;
+  max-width: 250px;
 }
 
 .advantages__item .advantages__icon {
@@ -390,8 +444,8 @@
   margin-bottom: 2px;
 }
 
-.how_we_work__item {
-  padding-left: 140px;
+.how_we_work__col {
+  padding-left: 0;
 }
 
 .how_we_work__text {
@@ -402,7 +456,7 @@
 }
 
 .how_we_work__number {
-  font-family: 'bigcity_grotesque_proregular';
+  font-family: 'elektra_light_proregular';
   font-size: 11px;
   color: #959595;
   padding-top: 37px;
@@ -425,6 +479,97 @@
   background-position: -10px 0;
 }
 
+.director h3 {
+  font-family: 'elektra_text_probold';
+  font-size: 24px;
+  color: #000;  
+  padding-left: 50px;
+}
+
+.director .director__photo {
+  padding-left: 0;
+}
+
+.director .director__name {
+  font-family: 'elektra_text_probold';
+  font-size: 16px;
+  color: #000;  
+}
+
+.director .director__job {
+  font-family: 'elektra_light_proregular';
+  font-size: 14px;
+  color: #e20613;
+}
+
+.director .director__quote { 
+  font-family: 'elektra_light_proregular';
+}
+
+.partners .partners__col {
+  padding-left: 0;
+}
+
+.partners .partners__icon {
+  display: block;
+  float: left;
+  width: 160px;
+  height: 130px;
+  background-image: url('../images/neft_partners.png');
+  background-repeat: no-repeat;
+}
+
+.partners .partners__icon.icon__rosneft {
+  background-position: 0 0;
+}
+
+.partners .partners__icon.icon__snph {
+  background-position: -200px 0;
+}
+
+.partners .partners__icon.icon__tatneft {
+  background-position: -400px 0;
+}
+
+.partners .partners__icon.icon__ink {
+  background-position: 0 -138px;
+}
+
+.partners .partners__icon.icon__gazprom {
+  background-position: -200px -138px;
+}
+
+.partners .partners__row {
+  padding-left: 15px;
+}
+
+.footer .footer__col {
+  padding-left: 0;
+  padding-top: 10px;
+  border-top: #e20613 solid 10px;
+}
+
+.footer .footer__phone {
+  font-family: 'elektra_text_probold';
+  font-size: 24px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.footer .footer__email {
+  font-family: 'elektra_light_proregular';
+  font-size: 18px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.footer .footer__copyright {
+  font-family: 'elektra_light_proregular';
+  font-size: 14px;
+  color: #363636;
+  white-space: nowrap;
+  line-height: 25px;
+}
 
 .neft {
   position: absolute;
@@ -434,18 +579,19 @@
   height: 745px;
   top: 440px;
   left: 50%;
-  margin-left: -640px;
+  margin-left: -644px;
   /*background: url('../images/background_gray.png') no-repeat left top #fff;*/
   /* border: #333 solid 1px; */
+  background: #fff;
 }
 
 .neft__svg {
   width: 1280px;
-  height: 745px;  
+  height: 745px;
 }
 
 .neft__map {
-  height: 800px;
+  height: 745px;
 }
 
 .neft__note {
@@ -472,6 +618,10 @@
   color: #fff;
 }
 
+.neft__note_active .neft__caption:link {
+  color: #fff;
+}
+
 .neft__caption {  
   font-family: 'bigcity_grotesque_promedium';
   font-size: 16px;
@@ -479,12 +629,22 @@
   /*font-weight: bold;*/
 }
 
+.neft__caption:link {  
+  font-family: 'bigcity_grotesque_promedium';
+  font-size: 16px;
+  color: #e20613;
+  /*font-weight: bold;*/
+}
+
+
 .neft__ul {
   margin-top: 5px;
   display: none;
 }
 
 .neft__ul .neft__link {
+  display: block;
+  float: left;
   font-family: 'bigcity_grotesque_proregular';
   /*font-family: 'Calibri';*/
   font-size: 14px;
@@ -494,9 +654,13 @@
   background: url('../images/neft_ul_dot.png') no-repeat 0 11px;
 }
 
+.neft__ul .neft__link:link {
+  background: url('../images/neft_ul_dot.png') no-repeat 0 11px;
+}  
+
 .neft__ul .neft__link:hover {
   background: url('../images/neft_ul_dot.png') no-repeat 0 11px;
-  text-decoration: underline;
+  text-decoration: none;
 }  
 
 
@@ -544,5 +708,45 @@
   left: 940px;
   top: 360px;
 }
+
+@media (min-width: 768px) {
+
+  .how_we_work .how_we_work__item {
+    padding-left: 120px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  body {
+    background: url('../images/bg_lines.png') repeat-y center top #fff;
+  }
+
+  .specialization ul {
+    margin-left: -25px;
+  }
+
+  .range {
+    background: url('../images/neft_range_bg.png') no-repeat center 80px;
+  }
+
+  .range .range__row {
+    background: url('../images/neft_range_line.png') no-repeat 0 10px;  
+  }
+
+  .director .director__caption {
+    padding-left: 60px;
+  }
+
+  .director .director__quote {
+    padding-left: 50px;
+    background: url('../images/neft_director_line.png') no-repeat left top;
+  }
+
+}
+
+
 
 

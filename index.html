@@ -20,6 +20,7 @@
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
 
 <script type="text/javascript" src="public/scripts/jquery.min.js" ></script>
+<script type="text/javascript" src="public/scripts/jquery.nav.js" ></script>
 <script type="text/javascript" src="public/scripts/bootstrap.min.js" ></script>
   
 <script type="text/javascript" src="public/scripts/snap.svg-min.js" ></script>
@@ -30,21 +31,23 @@
 
 <div class="space space__sep20"></div>
 
-<nav class="header navbar">
+<nav class="header">
   <div class="container">
 
     <div class="row">
-      <div class="header__logo col-md-2">
+      <div class="header__logo col-lg-2 col-sm-3 col-xs-12">
         <img src="public/images/neftezip_logo.png">
       </div>
-      <div class="header__caption col-md-6">
+      <div class="space space__sep20 visible-xs"></div>
+      <div class="header__caption col-lg-6 col-sm-3 col-xs-12">
         Комплексная поставка и ремонт<br>
         нефтегазового оборудования
       </div>
-      <div class="header__phone col-md-2">
+      <div class="space space__sep20 visible-xs"></div>
+      <div class="header__phone col-lg-2 col-sm-3 col-xs-6">
         +7 (3412) 68-48-48
       </div>
-      <div class="header__email col-md-2">
+      <div class="header__email col-lg-2 col-sm-3 col-xs-6">
         neftezip2@mail.ru
       </div>
     </div>
@@ -53,219 +56,221 @@
 </nav>
 
 
-<div class="space space__sep40"></div>
+<div class="space space__sep80"></div>
 
 <div class="menu">
   <div class="container">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-lg-2 visible-lg">
       </div>
-      <div class="col-md-2">
-        <a class="menu__link btn-link" href="#">Для кого работаем</a>
+      <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
+        <a class="menu__link btn-link" href="#for_who">Для кого работаем</a>
       </div>
-      <div class="col-md-2">
-        <a class="menu__link btn-link" href="#">Специализации</a>
+      <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
+        <a class="menu__link btn-link" href="#specialization">Специализации</a>
       </div>
-      <div class="col-md-2">
-        <a class="menu__link btn-link" href="#">Спектр услуг</a>
+      <div class="space space__sep20 visible-xs"></div>
+      <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
+        <a class="menu__link btn-link" href="#range">Спектр услуг</a>
       </div>
-      <div class="col-md-2">
-        <a class="menu__link btn-link" href="#">Преимущества</a>
+      <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
+        <a class="menu__link btn-link" href="#advantages">Преимущества</a>
       </div>
-      <div class="col-md-2">
-        <a class="menu__link btn-link" href="#">Схема работы</a>
+      <div class="space space__sep20 hidden-lg"></div>
+      <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
+        <a class="menu__link btn-link" href="#how_we_work">Схема работы</a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="space space__sep40"></div>
-
+<div class="space space__sep60"></div>
 
 <div class="landing">
   <div class="container">
     <div class="row">
-      <h1>Оптовые поставки, ЗИП и ремонт<br>оборудование для нефтегазовой отрасли<br>от 10% ниже конкурентов по России, СНГ  
+      <div class="landing__col col-lg-12 col-xs-12">
+        <h1>Оптовые поставки, ЗИП и ремонт оборудование для нефтегазовой отрасли от 10% ниже конкурентов по России, СНГ  
+      </div>
     </div>
   </div>
 </div>
 
-
-<div class="container neft__map">
+<div class="container neft__map visible-lg">
 
   <div class="neft">
     <svg class="neft__svg"></svg>
 
     <div class="neft__note stanki" data-target="stanki">
-      <a href="#" class="neft__caption">Станки качалки</a>
+      <a href="#stanki" class="neft__caption">Станки качалки</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">Множество городов</a>
+          <span class="neft__link">Множество городов</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
+          <span class="neft__link">Определение случайной</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Статьи подпадают</a>
+          <span class="neft__link">Статьи подпадают</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
       </ul>
     </div>
 
     <div class="neft__note zapchasti" data-target="zapchasti">
-      <a href="#" class="neft__caption">Запасные части</a>
+      <a href="#zapchasti" class="neft__caption">Запасные части</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Статьи подпадают</a>
+          <span class="neft__link">Статьи подпадают</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
       </ul>
     </div>
 
     <div class="neft__note pult" data-target="pult">
-      <a href="#" class="neft__caption">Пульт</a>
+      <a href="#pult" class="neft__caption">Пульт</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
+          <span class="neft__link">Определение случайной</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
       </ul>
     </div>
 
     <div class="neft__note kluch" data-target="kluch">
-      <a href="#" class="neft__caption">Ключи буровые АКБ</a>
+      <a href="#kluch" class="neft__caption">Ключи буровые АКБ</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
+          <span class="neft__link">Определение случайной</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Статьи подпадают</a>
+          <span class="neft__link">Статьи подпадают</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
       </ul>
     </div>
 
     <div class="neft__note kachalka" data-target="kachalka">
-      <a href="#" class="neft__caption">Глубинные штанговые насосы</a>
+      <a href="#kachalka" class="neft__caption">Глубинные штанговые насосы</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
+          <span class="neft__link">Определение случайной</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Статьи подпадают</a>
+          <span class="neft__link">Статьи подпадают</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
       </ul>
     </div>
 
     <div class="neft__note service_remont" data-target="service_remont">
-      <a href="#" class="neft__caption">Сервис и ремонт</a>
+      <a href="#service_remont" class="neft__caption">Сервис и ремонт</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
+          <span class="neft__link">Определение случайной</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
       </ul>
     </div>
 
     <div class="neft__note agregatu" data-target="agregatu">
-      <a href="#" class="neft__caption">Цементировочные агрегаты</a>
+      <a href="#agregatu" class="neft__caption">Цементировочные агрегаты</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
+          <span class="neft__link">Определение случайной</span>
         </li>
       </ul>
     </div>
 
     <div class="neft__note nasos" data-target="nasos">
-      <a href="#" class="neft__caption">Насосное оборудование<br>типа НБ</a>
+      <a href="#nasos" class="neft__caption">Насосное оборудование<br>типа НБ</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Статьи подпадают</a>
+          <span class="neft__link">Статьи подпадают</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">В ряде стран под</a>
+          <span class="neft__link">В ряде стран под</span>
         </li>
       </ul>
     </div>
 
     <div class="neft__note manifold" data-target="manifold">
-      <a href="#" class="neft__caption">Манифольд</a>
+      <a href="#manifold" class="neft__caption">Манифольд</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной</a>
+          <span class="neft__link">Определение случайной</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Статьи подпадают</a>
+          <span class="neft__link">Статьи подпадают</span>
         </li>
         <li>
-          <a href="#" class="neft__link nav-link">Определение случайной длинное название</a>
+          <span class="neft__link">Определение случайной длинное название</span>
         </li>
       </ul>
     </div>
@@ -280,15 +285,14 @@
 <div class="thesis">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <h3>Даём отсрочку до 90<br>дней</h3>
+      <div class="thesis__item col-lg-4">
+        <h3>Даём отсрочку до 90 дней</h3>
       </div>
-      <div class="col-md-4">
-        <h3>Схема оплаты - любая<br>удобная для вас</h3>
+      <div class="thesis__item col-lg-4">
+        <h3>Схема оплаты - любая удобная для вас</h3>
       </div>
-      <div class="col-md-4">
-        <h3>Наличие на складе<br>
-        популярных позиций</h3>
+      <div class="thesis__item col-lg-4">
+        <h3>Наличие на складе популярных позиций</h3>
       </div>
     </div>
   </div>
@@ -301,17 +305,19 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
 
-      <div class="request__body col-md-8">
+      <div class="request__body col-lg-8">
 
         <div class="request__form row">
-          <div class="col-md-6">
-            <h4>Оставьте заявку на<br>просчёт сметы</h4>
+          <div class="col-lg-5 col-sm-6 col-xs-12">
+            <h4>Оставьте заявку на просчёт сметы</h4>
             <div class="space space__sep20"></div>
-            <p>Укажите ваш телефон,<br>а также какое оборудование вам нужно.<br>Мы позвоним в течении рабочего дня.</p>
+            <p>Укажите ваш телефон, а также какое оборудование вам нужно.<br>Мы позвоним в течении рабочего дня.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-1 visible-lg">
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="space space__sep20"></div>
             <form class="form">
               <div class="form-group">
@@ -325,12 +331,12 @@
         </div>
 
         <div class="row">
-          <div class="request__submit col-md-12">
+          <div class="request__submit col-lg-12 col-xs-12">
             <a href="#" class="request__submit_button btn btn-block">Получить смету</a>
           </div>
         </div>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
 
     </div>
   </div>
@@ -338,61 +344,59 @@
 
 <div class="space space__sep100"></div>
 
-<div class="clients">
+<div id="for_who" class="clients">
   <div class="container">
+    <h2>Для кого работаем</h2>
     <div class="row">
-      <h2>Для кого работаем</h2>
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-2">
-          <div class="clients__item">
-            <span class="clients__icon icon__drilling_company"></span>
-            <div class="clients__caption">
-              <h4>Буровые компании</h4>
-            </div>
+      <div class="col-lg-2"></div>
+      <div class="clients__col col-lg-2 col-sm-3 col-xs-6">
+        <div class="clients__item">
+          <span class="clients__icon icon__drilling_company"></span>
+          <div class="clients__caption">
+            <h4>Буровые компании</h4>
           </div>
         </div>
-        <div class="col-md-2">
-          <div class="clients__item">
-            <span class="clients__icon icon__extracting_company"></span>
-            <div class="clients__caption">
-              <h4>Добывающие компании</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="clients__item">
-            <span class="clients__icon icon__oilfield_company"></span>
-            <div class="clients__caption">
-              <h4>Нефтесервисные компании</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="clients__item">
-            <span class="clients__icon icon__krc_company"></span>
-            <div class="clients__caption">
-              <h4>КРС-компании</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2"></div>
       </div>
+      <div class="clients__col col-lg-2 col-sm-3 col-xs-6">
+        <div class="clients__item">
+          <span class="clients__icon icon__extracting_company"></span>
+          <div class="clients__caption">
+            <h4>Добывающие компании</h4>
+          </div>
+        </div>
+      </div>
+      <div class="clients__col col-lg-2 col-sm-3 col-xs-6">
+        <div class="clients__item">
+          <span class="clients__icon icon__oilfield_company"></span>
+          <div class="clients__caption">
+            <h4>Нефтесервисные компании</h4>
+          </div>
+        </div>
+      </div>
+      <div class="clients__col col-lg-2 col-sm-3 col-xs-6">
+        <div class="clients__item">
+          <span class="clients__icon icon__krc_company"></span>
+          <div class="clients__caption">
+            <h4>КРС-компании</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
     </div>
   </div>
 </div>
 
 <div class="space space__sep120"></div>
 
-<div class="specialization">
+<div id="specialization" class="specialization">
   <div class="container">
     <div class="row">
 
-      <div class="col-md-6">
+      <div class="col-lg-6 col-xs-12">
         <h2>На чём<br>специализируемся</h2>
       </div>
 
-      <div class="col-md-2">
+      <div class="specialization__col col-lg-2 col-xs-6">
         <h4>Поставки оборудования и ЗИП<h4>
         <ul>
           <li>Текущие закупки</li>
@@ -401,10 +405,10 @@
         </ul>
       </div>
 
-      <div class="col-md-2">
+      <div class="col-lg-2">
       </div>
 
-      <div class="col-md-2">
+      <div class="specialization__col col-lg-2 col-xs-6">
         <h4>Ремонт оборудования<h4>
         <ul>
           <li>Срочный ремонт</li>
@@ -418,110 +422,128 @@
 
 <div class="space space__sep100"></div>
 
-<div class="range">
+<div id="range" class="range">
   <div class="container">
     <h2>Спектр оборудования и услуг</h2>
 
     <div class="space space__sep60"></div>
 
     <div class="range__row row">
-      <div class="col-md-2"></div>      
-      <div class="col-md-2">
+      <div class="col-lg-2 visible-lg"></div>
+      <div id="kluch" class="range__col col-lg-2 col-xs-3">
         <h4>Ключи буровые<br>АКБ</h4>
       </div>
-      <div class="col-md-2">
+      <div id="stanki" class="range__col col-lg-2 col-xs-3">
         <h4>Станки качалки</h4>
       </div>
-      <div class="col-md-2">
+      <div id="manifold" class="range__col col-lg-2 col-xs-3">
         <h4>Манифольд</h4>
       </div>
-      <div class="col-md-2">
+      <div id="nasos" class="range__col col-lg-2 col-xs-3">
         <h4>Насосное оборудование типа НБ</h4>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2 visible-lg"></div>
     </div>
 
     <div class="space space__sep20"></div>
 
     <div class="row">
-      <div class="col-md-2"></div>      
-      <div class="col-md-2">
-        В ряде стран под определение случайной статьи подпадают
+      <div class="col-lg-2 visible-lg"></div>      
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          В ряде стран под определение случайной статьи подпадают
+        </div>
       </div>
-      <div class="col-md-2">
-        также эксперименты в области генетики Так напрмер
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          также эксперименты в области генетики Так напрмер
+        </div>
       </div>
-      <div class="col-md-2">
-        не чем иным как разновидностью случки является введение в коня генов осминога с целью
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          не чем иным как разновидностью случки является введение в коня генов осминога с целью
+        </div>
       </div>
-      <div class="col-md-2">
-        увеличение количества ног у коня как следствие скорости
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          увеличение количества ног у коня как следствие скорости
+        </div>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2 visible-lg"></div>
     </div>
 
     <div class="space space__sep60"></div>
 
     <div class="range__row row">
-      <div class="col-md-2"></div>      
-      <div class="col-md-2">
+      <div class="col-lg-2 visible-lg"></div>
+      <div id="pult" class="range__col col-lg-2 col-xs-3">
         <h4>Пульт</h4>
       </div>
-      <div class="col-md-2">
+      <div id="zapchasti" class="range__col col-lg-2 col-xs-3">
         <h4>Запасные части</h4>
       </div>
-      <div class="col-md-2">
+      <div id="service_remont" class="range__col col-lg-2 col-xs-3">
         <h4>Сервис и ремонт</h4>
       </div>
-      <div class="col-md-2">
+      <div id="agregatu" class="range__col col-lg-2 col-xs-3">
         <h4>Цементировочные<br>агрегаты</h4>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2 visible-lg"></div>
     </div>
 
     <div class="space space__sep20"></div>
 
     <div class="row">
-      <div class="col-md-2"></div>      
-      <div class="col-md-2">
-        В ряде стран под определение случайной статьи подпадают
+      <div class="col-lg-2 visible-lg"></div>
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          В ряде стран под определение случайной статьи подпадают
+        </div>
       </div>
-      <div class="col-md-2">
-        также эксперименты в области генетики Так напрмер
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          также эксперименты в области генетики Так напрмер
+        </div>
       </div>
-      <div class="col-md-2">
-        не чем иным как разновидностью случки является введение в коня генов осминога с целью
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          не чем иным как разновидностью случки является введение в коня генов осминога с целью
+        </div>
       </div>
-      <div class="col-md-2">
-        увеличение количества ног у коня как следствие скорости
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          увеличение количества ног у коня как следствие скорости
+        </div>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2 visible-lg"></div>
     </div>
 
     <div class="space space__sep60"></div>
 
     <div class="range__row row">
-      <div class="col-md-2"></div>
-      <div class="col-md-2">
+      <div class="col-lg-2 visible-lg"></div>
+      <div id="kachalka" class="range__col col-lg-2 col-xs-3">
         <h4>Глубинные штанговые насосы</h4>
       </div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2 visible-lg"></div>
     </div>
 
     <div class="space space__sep20"></div>
 
     <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-2">
-        В ряде стран под определение случайной статьи подпадают
+      <div class="col-lg-2 visible-lg"></div>
+      <div class="range__col col-lg-2 col-xs-3">
+        <div class="range__text">
+          В ряде стран под определение случайной статьи подпадаю В ряде стран под определение случайной
+        </div>
       </div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2 visible-lg"></div>
     </div>
 
   </div>
@@ -533,17 +555,19 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
 
-      <div class="request__body col-md-8">
+      <div class="request__body col-lg-8">
 
         <div class="request__form row">
-          <div class="col-md-6">
-            <h4>Оставьте заявку на<br>просчёт сметы</h4>
+          <div class="col-lg-5 col-sm-6 col-xs-12">
+            <h4>Оставьте заявку на просчёт сметы</h4>
             <div class="space space__sep20"></div>
-            <p>Укажите ваш телефон,<br>а также какое оборудование вам нужно.<br>Мы позвоним в течении рабочего дня.</p>
+            <p>Укажите ваш телефон, а также какое оборудование вам нужно.<br>Мы позвоним в течении рабочего дня.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-1 visible-lg">
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="space space__sep20"></div>
             <form class="form">
               <div class="form-group">
@@ -557,12 +581,12 @@
         </div>
 
         <div class="row">
-          <div class="request__submit col-md-12">
+          <div class="request__submit col-lg-12 col-xs-12">
             <a href="#" class="request__submit_button btn btn-block">Получить смету</a>
           </div>
         </div>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
 
     </div>
   </div>
@@ -570,83 +594,91 @@
 
 <div class="space space__sep100"></div>
 
-<div class="advantages">
+<div id="advantages" class="advantages">
   <div class="container">
     <h2>Преимущества "НефтеЗИП"</h2>
 
     <div class="row">
 
-      <div class="advantages__item col-md-4">
-        <span class="advantages__icon icon__goodprices"></span>
-        <div class="advantages__caption">
-          <h4>Выгодные цены</h4>
-        </div>
-        <div class="advantages__text">
-          Поддерживаем цены на продукцию
-          минимум на 10% ниже, чем у
-          конкурентов
-        </div>
-      </div>
-
-      <div class="advantages__item col-md-4">
-        <span class="advantages__icon icon__clientcentered"></span>
-        <div class="advantages__caption">
-          <h4>Клиентоцентричность</h4>
-        </div>
-        <div class="advantages__text">
-          Выполним любые требования по
-          срокам и способам доставки
+      <div class="advantages__col col-lg-4 col-xs-6 col-sm-4">
+        <div class="advantages__item">
+          <span class="advantages__icon icon__goodprices"></span>
+          <div class="advantages__caption">
+            <h4>Выгодные цены</h4>
+          </div>
+          <div class="advantages__text">
+            Поддерживаем цены на продукцию
+            минимум на 10% ниже, чем у
+            конкурентов
+          </div>
         </div>
       </div>
 
-      <div class="advantages__item col-md-4">
-        <span class="advantages__icon icon__pricedelay"></span>
-        <div class="advantages__caption">
-          <h4>Отсрочка оплаты</h4>
-        </div>
-        <div class="advantages__text">
-          Нет возможности оплатить сразу?
-          Дадим отсрочку платежа на 90 дней
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div class="advantages__item col-md-4">
-        <span class="advantages__icon icon__fastshipping"></span>
-        <div class="advantages__caption">
-          <h4>Быстрая доставка</h4>
-        </div>
-        <div class="advantages__text">
-          Можем доставить продукцию своим 
-          транспортом быстрее транспортных
-          компаний
+      <div class="advantages__col col-lg-4 col-xs-6 col-sm-4">
+        <div class="advantages__item">
+          <span class="advantages__icon icon__clientcentered"></span>
+          <div class="advantages__caption">
+            <h4>Клиентоцентричность</h4>
+          </div>
+          <div class="advantages__text">
+            Выполним любые требования по
+            срокам и способам доставки
+          </div>
         </div>
       </div>
 
-      <div class="advantages__item col-md-4">
-        <span class="advantages__icon icon__sale"></span>
-        <div class="advantages__caption">
-          <h4>Скидки</h4>
-        </div>
-        <div class="advantages__text">
-          Предоставляем скидки за объём,
-          постоянным клиентам, а также при
-          100%-предоплате
+      <div class="advantages__col col-lg-4 col-xs-6 col-sm-4">
+        <div class="advantages__item">
+          <span class="advantages__icon icon__pricedelay"></span>
+          <div class="advantages__caption">
+            <h4>Отсрочка оплаты</h4>
+          </div>
+          <div class="advantages__text">
+            Нет возможности оплатить сразу?
+            Дадим отсрочку платежа на 90 дней
+          </div>
         </div>
       </div>
 
-      <div class="advantages__item col-md-4">
-        <span class="advantages__icon icon__instock"></span>
-        <div class="advantages__caption">
-          <h4>Наличие на складе</h4>
+      <div class="advantages__col col-lg-4 col-xs-6 col-sm-4">
+        <div class="advantages__item">
+          <span class="advantages__icon icon__fastshipping"></span>
+          <div class="advantages__caption">
+            <h4>Быстрая доставка</h4>
+          </div>
+          <div class="advantages__text">
+            Можем доставить продукцию своим 
+            транспортом быстрее транспортных
+            компаний
+          </div>
         </div>
-        <div class="advantages__text">
-          Все ходовые позиции есть на складе.
-          Вы получите изделия максимально 
-          быстро
+      </div>
+
+      <div class="advantages__col col-lg-4 col-xs-6 col-sm-4">
+        <div class="advantages__item">
+          <span class="advantages__icon icon__sale"></span>
+          <div class="advantages__caption">
+            <h4>Скидки</h4>
+          </div>
+          <div class="advantages__text">
+            Предоставляем скидки за объём,
+            постоянным клиентам, а также при
+            100%-предоплате
+          </div>
+        </div>
+      </div>
+
+      <div class="advantages__col col-lg-4 col-xs-6 col-sm-4">
+        <div class="advantages__item">
+          <span class="advantages__icon icon__instock"></span>
+          <div class="advantages__caption">
+            <h4>Наличие на складе</h4>
+          </div>
+          <div class="advantages__text">
+            Все ходовые позиции есть на складе.
+            Вы получите изделия максимально 
+            быстро
+          </div>
         </div>
       </div>
 
@@ -657,69 +689,12 @@
 
 <div class="space space__sep100"></div>
 
-<div class="how_we_work">
+<div id="how_we_work" class="how_we_work">
   <div class="container">
     <h2>Как мы работаем</h2>
     <div class="row">
 
-      <div class="col-md-4">
-
-        <div class="space space__sep100"></div>
-        <div class="space space__sep100"></div>
-        <div class="space space__sep100"></div>
-        <div class="space space__sep100"></div>
-        <div class="space space__sep100"></div>
-        <h3>Слово руководителю</h3>
-
-      </div>
-
-      <div class="col-md-2">
-        <ul>
-          <li class="how_we_work__item">
-            <span class="how_we_work__icon icon__arrow_red"></span>
-          </li>
-          <li class="how_we_work__item">
-            <span class="how_we_work__icon icon__arrow_red"></span>
-          </li>
-          <li class="how_we_work__item">
-            <span class="how_we_work__icon icon__arrow_red"></span>
-          </li>
-          <li class="how_we_work__item">
-            <span class="how_we_work__icon icon__arrow_red"></span>
-          </li>
-          <li class="how_we_work__item">
-            <span class="how_we_work__icon icon__arrow_red"></span>
-          </li>
-          <li class="how_we_work__item">
-            <span class="how_we_work__icon icon__arrow_black"></span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-md-4">
-        <ul>
-          <li class="how_we_work__text">
-            Оставляете заявку
-          </li>
-          <li class="how_we_work__text">
-            Заключаем договор, подписываем спецификации
-          </li>
-          <li class="how_we_work__text">
-            Присылаем ответ в виде предложения с ценой
-          </li>
-          <li class="how_we_work__text">
-            Комплектуем и доставляем продукцию в установленный срок
-          </li>
-          <li class="how_we_work__text">
-            Согласовываем сроки, цены, условия и возможности скидки
-          </li>
-          <li class="how_we_work__text">
-            Ответственное лицо получает товар и подписывает акты
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-md-2">
+      <div class="how_we_work__col col-lg-2 col-xs-2 pull-right">
         <ul>
           <li class="how_we_work__number">
             1
@@ -742,28 +717,165 @@
         </ul>  
       </div>
 
+      <div class="how_we_work__col col-lg-4 col-xs-7 pull-right">
+        <ul>
+          <li class="how_we_work__text">
+            Оставляете заявку
+          </li>
+          <li class="how_we_work__text">
+            Заключаем договор, подписываем спецификации
+          </li>
+          <li class="how_we_work__text">
+            Присылаем ответ в виде предложения с ценой
+          </li>
+          <li class="how_we_work__text">
+            Комплектуем и доставляем продукцию в установленный срок
+          </li>
+          <li class="how_we_work__text">
+            Согласовываем сроки, цены, условия и возможности скидки
+          </li>
+          <li class="how_we_work__text">
+            Ответственное лицо получает товар и подписывает акты
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-xs-3 pull-right">
+        <ul>
+          <li class="how_we_work__item">
+            <span class="how_we_work__icon icon__arrow_red"></span>
+          </li>
+          <li class="how_we_work__item">
+            <span class="how_we_work__icon icon__arrow_red"></span>
+          </li>
+          <li class="how_we_work__item">
+            <span class="how_we_work__icon icon__arrow_red"></span>
+          </li>
+          <li class="how_we_work__item">
+            <span class="how_we_work__icon icon__arrow_red"></span>
+          </li>
+          <li class="how_we_work__item">
+            <span class="how_we_work__icon icon__arrow_red"></span>
+          </li>
+          <li class="how_we_work__item">
+            <span class="how_we_work__icon icon__arrow_black"></span>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="director col-lg-4 col-xs-12">
+
+        <div class="visible-lg"> 
+          <div class="space space__sep100"></div>
+          <div class="space space__sep100"></div>
+          <div class="space space__sep100"></div>
+          <div class="space space__sep100"></div>
+          <div class="space space__sep100"></div>
+        </div>
+
+        <div class="space space__sep40 hidden-lg"></div>
+        <h3>Слово руководителю</h3>
+        <div class="space space__sep20"></div>
+        <div class="row">
+          <div class="director__photo col-lg-12 col-xs-6 col-sm-4">
+              <img src="public/images/photo_director.png">
+          </div>
+          <div class="space space__sep20 visible-lg"></div>
+
+          <div class="director__caption col-lg-12 col-xs-6 col-sm-8">
+            <div class="director__name">
+              <h4>Илья Валерьевич Ширяев</h4>
+            </div>
+            <div class="director__job">
+              <h4>руководитель «НефтеЗИП»</h4>
+            </div>
+            <div class="space space__sep20"></div>
+          </div>
+
+          <div class="space space__sep20 visible-xs"></div>
+
+          <div class="director__quote col-lg-12 col-xs-12 col-sm-8">
+            Мы стремимся создавать комплексный
+            продукт, который решит проблемы
+            максимально широкого круга нефтегазовых компаний
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="partners col-lg-8 col-xs-12">
+
+        <div class="row">
+
+          <div class="col-lg-3 visible-lg"></div>
+
+          <div class="partners__col col-lg-9 col-xs-12">
+
+            <div class="space space__sep40"></div>
+
+            <h3>Наши партнеры</h3>
+
+
+            <div class="partners__row row">
+              <div class="col-xs-4">
+                <div class="partners__icon icon__rosneft">
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="partners__icon icon__snph">
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="partners__icon icon__tatneft">
+                </div>
+              </div>
+            </div>
+
+            <div class="partners__row row">
+              <div class="col-xs-4">
+                <div class="partners__icon icon__ink">
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="partners__icon icon__gazprom">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
     </div>
 
   </div>
 </div>
 
-<div class="space space__sep100"></div>
+<div class="space space__sep80"></div>
 
 <div class="request">
   <div class="container">
     <div class="row">
 
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
 
-      <div class="request__body col-md-8">
+      <div class="request__body col-lg-8">
 
         <div class="request__form row">
-          <div class="col-md-6">
-            <h4>Оставьте заявку на<br>просчёт сметы</h4>
+          <div class="col-lg-5 col-sm-6 col-xs-12">
+            <h4>Оставьте заявку на просчёт сметы</h4>
             <div class="space space__sep20"></div>
-            <p>Укажите ваш телефон,<br>а также какое оборудование вам нужно.<br>Мы позвоним в течении рабочего дня.</p>
+            <p>Укажите ваш телефон, а также какое оборудование вам нужно.<br>Мы позвоним в течении рабочего дня.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-1 visible-lg">
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="space space__sep20"></div>
             <form class="form">
               <div class="form-group">
@@ -777,32 +889,54 @@
         </div>
 
         <div class="row">
-          <div class="request__submit col-md-12">
+          <div class="request__submit col-lg-12 col-xs-12">
             <a href="#" class="request__submit_button btn btn-block">Получить смету</a>
           </div>
         </div>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
 
     </div>
   </div>
 </div>
 
+<div class="space space__sep100"></div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-2"></div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <strong>+7 (3412) 68-48-48</strong><br>
-      neftezip2@mail.ru
-      <br>
-      <br>
-      <br>
-      <strong>НефтеЗИП</strong><br>
-      (c) НефтеЗип, 2017г.<br>
-      Комплексная поставка и ремонт нефтегазового оборудования
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 visible-lg"></div>
+      <div class="footer__col col-lg-2 col-xs-12">
+
+        <div class="space space__sep20"></div>
+
+        <div class="footer__phone">
+          +7 (3412) 68-48-48
+        </div>
+
+        <div class="space space__sep10"></div>
+
+        <div class="footer__email">
+          neftezip2@mail.ru
+        </div>
+        
+        <div class="space space__sep40"></div>
+
+        <div class="footer__logo">
+          <img src="public/images/neftezip_logo.png">
+        </div>
+
+        <div class="space space__sep20"></div>
+
+        <div class="footer__copyright">
+          © НефтеЗип, 2017г.<br>
+          Комплексная поставка и ремонт<br>
+          нефтегазового оборудования
+        </div>
+
+        <div class="space space__sep40"></div>
+
+      </div>
     </div>
   </div>
 </div>
