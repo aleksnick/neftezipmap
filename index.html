@@ -14,13 +14,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" type="text/css" media="screen" href="public/styles/bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="public/styles/noty_theme_default.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="public/styles/jquery.noty.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="public/styles/neft.2.3.css" />
 
 <link rel="icon" type="image/png" href="fav.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
 
 <script type="text/javascript" src="public/scripts/jquery.min.js" ></script>
-<script type="text/javascript" src="public/scripts/jquery.nav.js" ></script>
+<script type="text/javascript" src="public/scripts/jquery.easing.1.3.js" ></script>
+<script type="text/javascript" src="public/scripts/jquery.noty.js" ></script>
+<script type="text/javascript" src="public/scripts/jquery.maskedinput.min.js" ></script>
 <script type="text/javascript" src="public/scripts/bootstrap.min.js" ></script>
   
 <script type="text/javascript" src="public/scripts/snap.svg-min.js" ></script>
@@ -29,14 +33,42 @@
 </head>
 <body>
 
+<div class="fixednavbar hidden">
+  <div class="container">
+
+    <div class="menu__row row">
+      <div class="fixednavbar__logo col-lg-2">
+        <a class="scroll" href="#home">
+          <img width="165" height="39" src="public/images/neftezip__logo.png">
+        </a>
+      </div>
+      <div class="menu__col col-lg-2">
+        <a class="menu__link scroll btn-link" href="#for_who">Для кого работаем</a>
+      </div>
+      <div class="menu__col col-lg-2">
+        <a class="menu__link scroll btn-link" href="#specialization">Специализации</a>
+      </div>
+      <div class="menu__col col-lg-2">
+        <a class="menu__link scroll btn-link" href="#range">Спектр услуг</a>
+      </div>
+      <div class="menu__col col-lg-2">
+        <a class="menu__link scroll btn-link" href="#advantages">Преимущества</a>
+      </div>
+      <div class="menu__col col-lg-2">
+        <a class="menu__link scroll btn-link" href="#how_we_work">Схема работы</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="space space__sep20"></div>
 
 <nav class="header">
   <div class="container">
 
     <div class="row">
-      <div class="header__logo col-lg-2 col-sm-3 col-xs-12">
-        <img src="public/images/neftezip_logo.png">
+      <div id="home" class="header__logo col-lg-2 col-sm-3 col-xs-10">
+        <img width="165" height="39" src="public/images/neftezip__logo.png">
       </div>
       <div class="space space__sep20 visible-xs"></div>
       <div class="header__caption col-lg-6 col-sm-3 col-xs-12">
@@ -60,25 +92,25 @@
 
 <div class="menu">
   <div class="container">
-    <div class="row">
+    <div class="menu__row row">
       <div class="col-lg-2 visible-lg">
       </div>
       <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
-        <a class="menu__link btn-link" href="#for_who">Для кого работаем</a>
+        <a class="menu__link scroll btn-link" href="#for_who">Для кого работаем</a>
       </div>
       <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
-        <a class="menu__link btn-link" href="#specialization">Специализации</a>
+        <a class="menu__link scroll btn-link" href="#specialization">Специализации</a>
       </div>
       <div class="space space__sep20 visible-xs"></div>
       <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
-        <a class="menu__link btn-link" href="#range">Спектр услуг</a>
+        <a class="menu__link scroll btn-link" href="#range">Спектр услуг</a>
       </div>
       <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
-        <a class="menu__link btn-link" href="#advantages">Преимущества</a>
+        <a class="menu__link scroll btn-link" href="#advantages">Преимущества</a>
       </div>
       <div class="space space__sep20 hidden-lg"></div>
       <div class="menu__col col-lg-2 col-sm-3 col-xs-6">
-        <a class="menu__link btn-link" href="#how_we_work">Схема работы</a>
+        <a class="menu__link scroll btn-link" href="#how_we_work">Схема работы</a>
       </div>
     </div>
   </div>
@@ -102,7 +134,7 @@
     <svg class="neft__svg"></svg>
 
     <div class="neft__note stanki" data-target="stanki">
-      <a href="#stanki" class="neft__caption">Станки качалки</a>
+      <a href="#range__stanki" class="scroll neft__caption">Станки качалки</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">Множество городов</span>
@@ -123,7 +155,7 @@
     </div>
 
     <div class="neft__note zapchasti" data-target="zapchasti">
-      <a href="#zapchasti" class="neft__caption">Запасные части</a>
+      <a href="#range__zapchasti" class="scroll neft__caption">Запасные части</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">В ряде стран под</span>
@@ -147,7 +179,7 @@
     </div>
 
     <div class="neft__note pult" data-target="pult">
-      <a href="#pult" class="neft__caption">Пульт</a>
+      <a href="#range__pult" class="scroll neft__caption">Пульт</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">В ряде стран под</span>
@@ -165,7 +197,7 @@
     </div>
 
     <div class="neft__note kluch" data-target="kluch">
-      <a href="#kluch" class="neft__caption">Ключи буровые АКБ</a>
+      <a href="#range__kluch" class="scroll neft__caption">Ключи буровые АКБ</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">В ряде стран под</span>
@@ -186,7 +218,7 @@
     </div>
 
     <div class="neft__note kachalka" data-target="kachalka">
-      <a href="#kachalka" class="neft__caption">Глубинные штанговые насосы</a>
+      <a href="#range__kachalka" class="scroll neft__caption">Глубинные штанговые насосы</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">В ряде стран под</span>
@@ -213,7 +245,7 @@
     </div>
 
     <div class="neft__note service_remont" data-target="service_remont">
-      <a href="#service_remont" class="neft__caption">Сервис и ремонт</a>
+      <a href="#range__service_remont" class="scroll neft__caption">Сервис и ремонт</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">В ряде стран под</span>
@@ -228,7 +260,7 @@
     </div>
 
     <div class="neft__note agregatu" data-target="agregatu">
-      <a href="#agregatu" class="neft__caption">Цементировочные агрегаты</a>
+      <a href="#range__agregatu" class="scroll neft__caption">Цементировочные агрегаты</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">В ряде стран под</span>
@@ -240,7 +272,7 @@
     </div>
 
     <div class="neft__note nasos" data-target="nasos">
-      <a href="#nasos" class="neft__caption">Насосное оборудование<br>типа НБ</a>
+      <a href="#range__nasos" class="scroll neft__caption">Насосное оборудование<br>типа НБ</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">В ряде стран под</span>
@@ -261,7 +293,7 @@
     </div>
 
     <div class="neft__note manifold" data-target="manifold">
-      <a href="#manifold" class="neft__caption">Манифольд</a>
+      <a href="#range__manifold" class="scroll neft__caption">Манифольд</a>
       <ul class="neft__ul nav nav-pills nav-stacked">
         <li>
           <span class="neft__link">Определение случайной</span>
@@ -321,10 +353,10 @@
             <div class="space space__sep20"></div>
             <form class="form">
               <div class="form-group">
-                <input class="form-control" placeholder="+7 Ваш телефон">
+                <input class="request__phone form-control" placeholder="+7 Ваш телефон">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows="5">Какое оборудование требуется?</textarea>
+                <textarea class="request__message form-control" rows="5">Какое оборудование требуется?</textarea>
               </div>
             </form>
           </div>
@@ -430,16 +462,16 @@
 
     <div class="range__row row">
       <div class="col-lg-2 visible-lg"></div>
-      <div id="kluch" class="range__col col-lg-2 col-xs-3">
+      <div id="range__kluch" class="range__col col-lg-2 col-xs-3">
         <h4>Ключи буровые<br>АКБ</h4>
       </div>
-      <div id="stanki" class="range__col col-lg-2 col-xs-3">
+      <div id="range__stanki" class="range__col col-lg-2 col-xs-3">
         <h4>Станки качалки</h4>
       </div>
-      <div id="manifold" class="range__col col-lg-2 col-xs-3">
+      <div id="range__manifold" class="range__col col-lg-2 col-xs-3">
         <h4>Манифольд</h4>
       </div>
-      <div id="nasos" class="range__col col-lg-2 col-xs-3">
+      <div id="range__nasos" class="range__col col-lg-2 col-xs-3">
         <h4>Насосное оборудование типа НБ</h4>
       </div>
       <div class="col-lg-2 visible-lg"></div>
@@ -476,16 +508,16 @@
 
     <div class="range__row row">
       <div class="col-lg-2 visible-lg"></div>
-      <div id="pult" class="range__col col-lg-2 col-xs-3">
+      <div id="range__pult" class="range__col col-lg-2 col-xs-3">
         <h4>Пульт</h4>
       </div>
-      <div id="zapchasti" class="range__col col-lg-2 col-xs-3">
+      <div id="range__zapchasti" class="range__col col-lg-2 col-xs-3">
         <h4>Запасные части</h4>
       </div>
-      <div id="service_remont" class="range__col col-lg-2 col-xs-3">
+      <div id="range__service_remont" class="range__col col-lg-2 col-xs-3">
         <h4>Сервис и ремонт</h4>
       </div>
-      <div id="agregatu" class="range__col col-lg-2 col-xs-3">
+      <div id="range__agregatu" class="range__col col-lg-2 col-xs-3">
         <h4>Цементировочные<br>агрегаты</h4>
       </div>
       <div class="col-lg-2 visible-lg"></div>
@@ -522,7 +554,7 @@
 
     <div class="range__row row">
       <div class="col-lg-2 visible-lg"></div>
-      <div id="kachalka" class="range__col col-lg-2 col-xs-3">
+      <div id="range__kachalka" class="range__col col-lg-2 col-xs-3">
         <h4>Глубинные штанговые насосы</h4>
       </div>
       <div class="col-lg-2"></div>
@@ -571,10 +603,10 @@
             <div class="space space__sep20"></div>
             <form class="form">
               <div class="form-group">
-                <input class="form-control" placeholder="+7 Ваш телефон">
+                <input class="request__phone form-control" placeholder="+7 Ваш телефон">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows="5">Какое оборудование требуется?</textarea>
+                <textarea class="request__message form-control" rows="5">Какое оборудование требуется?</textarea>
               </div>
             </form>
           </div>
@@ -779,7 +811,7 @@
         <div class="space space__sep20"></div>
         <div class="row">
           <div class="director__photo col-lg-12 col-xs-6 col-sm-4">
-              <img src="public/images/photo_director.png">
+              <img src="public/images/director__photo.png">
           </div>
           <div class="space space__sep20 visible-lg"></div>
 
@@ -879,10 +911,10 @@
             <div class="space space__sep20"></div>
             <form class="form">
               <div class="form-group">
-                <input class="form-control" placeholder="+7 Ваш телефон">
+                <input class="request__phone form-control" placeholder="+7 Ваш телефон">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows="5">Какое оборудование требуется?</textarea>
+                <textarea class="request__message form-control" rows="5">Какое оборудование требуется?</textarea>
               </div>
             </form>
           </div>
@@ -923,7 +955,7 @@
         <div class="space space__sep40"></div>
 
         <div class="footer__logo">
-          <img src="public/images/neftezip_logo.png">
+          <img width="165" height="39" src="public/images/neftezip__logo.png">
         </div>
 
         <div class="space space__sep20"></div>
