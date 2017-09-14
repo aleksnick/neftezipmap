@@ -72,6 +72,10 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 90%;
+}
+
 
 .space {
   display: block;
@@ -200,9 +204,9 @@ body {
 
 .landing h1 {
   font-family: 'elektra_text_probold';
-  font-size: 45px;
+  font-size: 32px;
   color: #000;  
-  padding-left: 80px;
+  padding-left: 20px;
   border-left: #e20613 5px solid;
 }
 
@@ -293,9 +297,9 @@ body {
 
 .clients h2 {
   font-family: 'elektra_text_probold';
-  font-size: 32px;
-  color: #000;  
-  padding-left: 60px;
+  font-size: 26px;
+  color: #000;
+  padding-left: 0;
 }
 
 .clients .clients__caption {
@@ -341,9 +345,13 @@ body {
 
 .specialization h2 {
   font-family: 'elektra_text_probold';
-  font-size: 32px;
+  font-size: 26px;
   color: #000;  
-  padding-left: 50px;
+  padding-left: 0;
+}
+
+.specialization__header{
+  padding-left: 0;
 }
 
 .specialization h4 {
@@ -374,14 +382,23 @@ body {
 
 .range {
   background: #fbfbfb;
-  padding: 40px;
+  /*margin-left: -2px;*/
+  /*padding: 40px;*/
+}
+
+.range .range__container {
+  /*max-width: 95%;*/
+}
+
+.range__header {
+  padding-left: 0;
 }
 
 .range h2 {
   font-family: 'elektra_text_probold';
-  font-size: 45px;
+  font-size: 36px;
   color: #000;  
-  padding-left: 50px;
+  padding-left: 0;
 }
 
 .range h4 {
@@ -400,11 +417,15 @@ body {
   line-height: 30px;
 }
 
+.advantages__header {
+  padding-left: 0;
+}
+
 .advantages h2 {
   font-family: 'elektra_text_probold';
-  font-size: 32px;
+  font-size: 26px;
   color: #000;  
-  padding-left: 50px;  
+  padding-left: 0;
 }
 
 .advantages .advantages__caption {
@@ -465,11 +486,15 @@ body {
   background-position: -576px 0;
 }
 
+.how_we_work__header {
+  padding-left: 0;
+}
+
 .how_we_work h2 {
   font-family: 'elektra_text_probold';
-  font-size: 32px;
+  font-size: 26px;
   color: #000;  
-  padding-left: 50px;
+  padding-left: 0;
 }
 
 .how_we_work ul {
@@ -520,11 +545,15 @@ body {
   background-position: -10px 0;
 }
 
+.director__header {
+  padding-left: 0;
+}
+
 .director h3 {
   font-family: 'elektra_text_probold';
   font-size: 24px;
   color: #000;  
-  padding-left: 50px;
+  padding-left: 0;
 }
 
 .director .director__photo {
@@ -745,12 +774,69 @@ body {
 
 @media (min-width: 768px) {
 
+  .landing h1 {
+    font-family: 'elektra_text_probold';
+    font-size: 45px;
+    color: #000;  
+    padding-left: 80px;
+    border-left: #e20613 5px solid;
+  }
+
+  .director__header {
+    padding-left: 15px;
+  }
+
+  .director h3 {
+    font-size: 24px;
+    padding-left: 50px;
+  }
+
+  .how_we_work__header {
+    padding-left: 15px;
+  }
+
+  .how_we_work h2 {
+    font-size: 32px;
+    padding-left: 50px;
+  }
+
+  .advantages__header {
+    padding-left: 15px;
+  }
+
+  .advantages h2 {
+    font-size: 32px;
+    padding-left: 50px;
+  }
+
+  .range__header {
+    padding-left: 15px;
+  }
+
+  .range h2 {
+    font-size: 45px;
+    padding-left: 50px;
+  }
+
   .how_we_work .how_we_work__item {
     padding-left: 120px;
   }
 
-}
+  .specialization h2 {
+    font-size: 32px;
+    padding-left: 50px;
+  }
 
+  .specialization__header{
+    padding-left: 15px;
+  }
+
+  .clients h2 {
+    font-size: 32px;
+    padding-left: 60px;
+  }
+
+}
 
 @media (min-width: 1200px) {
 
