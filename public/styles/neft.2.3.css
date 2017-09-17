@@ -135,8 +135,8 @@ body {
   display: block;
   float: left;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   z-index: 100;
   background: #fff;
   border-bottom: #e20613 solid 2px;
@@ -160,21 +160,21 @@ body {
   min-width: 180px;
 }
 
-.header .header__caption {
+.header__caption {
   font-family: 'elektra_light_proregular';
   font-size: 15px;
   color: #6e6e6e;
   padding-left: 0;
 }
 
-.header .header__phone {
+.header__phone {
   font-family: 'elektra_text_probold';
   font-size: 16px;
   color: #000;
   padding-left: 0;
 }
 
-.header .header__email {
+.header__email {
   font-family: 'elektra_light_proregular';
   font-size: 16px;
   color: #000;
@@ -778,6 +778,11 @@ body {
 
 @media (min-width: 768px) {
 
+  .fixednavbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .landing h1 {
     font-family: 'elektra_text_probold';
     font-size: 45px;
@@ -867,6 +872,11 @@ body {
 
   body {
     background: url('../images/neftezip__background_lines.png') repeat-y center top #fff;
+  }
+
+  .fixednavbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .specialization ul {
