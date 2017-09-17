@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+  var neft;
 
   var NefteZipMap = function() {
 
@@ -300,12 +301,19 @@ $(document).ready(function() {
 
   };
 
-  var neft = new NefteZipMap();
+  if ($(window).width() > 1200) {
+    neft = new NefteZipMap();
+  }
 
 
   $('.request__phone').mask("+7(999) 999-99-99");
 
   $(document).on('focus', '.request__message', function() {
+    // $(this).val('');
+    $(this).select();
+  });
+
+  $(document).on('click', '.request__message', function() {
     // $(this).val('');
     $(this).select();
   });
