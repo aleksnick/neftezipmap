@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  var neft;
+  var map;
 
   var NefteZipMap = function() {
 
@@ -8,23 +8,23 @@ $(document).ready(function() {
       activeObject:  null
     };
 
-    var $neft = $('.neft');
-    var s = Snap(".neft__svg");
+    var $map = $('.map__window');
+    var s = Snap(".map__svg");
     var w = 1280;
     var h = 745;
 
     var neftObjects = new Array();
 
     var getMouseX = function(e) {
-      return e.pageX - $neft.offset().left;
+      return e.pageX - $map.offset().left;
     }
 
     var getMouseY = function(e) {
-      return e.pageY - $neft.offset().top;
+      return e.pageY - $map.offset().top;
     }
 
     var getPathOfNote = function(name) {
-      var $note = $('.neft__note.' + name);
+      var $note = $('.map__note.' + name);
       return 'M' +
         ($note.position().left - 20) + ' ' + ($note.position().top - 20) + ' ' +
         ($note.position().left + $note.outerWidth() + 20) + ' ' + ($note.position().top - 20) + ' ' +
@@ -49,8 +49,8 @@ $(document).ready(function() {
     };
 
     var isNoteOpen = function(name) {
-      var $note = $('.neft__note.' + name);
-      return $note.hasClass('neft__note_active');
+      var $note = $('.map__note.' + name);
+      return $note.hasClass('map__note_active');
     };
 
     var isObjectActive = function(name) {
@@ -74,7 +74,7 @@ $(document).ready(function() {
       var path;
 
       if (name !== null) {
-        $note = $('.neft__note.' + name);
+        $note = $('.map__note.' + name);
         path = getPathOfNote(name);
         if (Snap.path.isPointInside(path, getMouseX(e), getMouseY(e))) {
           res = true;
@@ -96,7 +96,7 @@ $(document).ready(function() {
     };
 
     var showObject = function(name) {
-      var $note = $('.neft__note.' + name);
+      var $note = $('.map__note.' + name);
 
       hideBackground();
 
@@ -132,7 +132,7 @@ $(document).ready(function() {
     };
 
     var hideObject = function(name) {
-      var $note = $('.neft__note.' + name);
+      var $note = $('.map__note.' + name);
 
       showBackground();
 
@@ -175,27 +175,27 @@ $(document).ready(function() {
     };
 
     var showNote = function(name) {
-      var $note = $('.neft__note.' + name);
-      $note.addClass('neft__note_active');
-      $('.neft__note').each(function(i) {
+      var $note = $('.map__note.' + name);
+      $note.addClass('map__note_active');
+      $('.map__note').each(function(i) {
         if (!$(this).hasClass(name)) {
-          if ($(this).hasClass('neft__note_active')) {
-            $(this).removeClass('neft__note_active');
+          if ($(this).hasClass('map__note_active')) {
+            $(this).removeClass('map__note_active');
           }
         }
       });
     };
 
     var hideNote = function(name) {
-      var $note = $('.neft__note.' + name);
-      $note.removeClass('neft__note_active');
+      var $note = $('.map__note.' + name);
+      $note.removeClass('map__note_active');
     };
 
-    // $(document).on('click', $neft, function(e) {
+    // $(document).on('click', $map, function(e) {
     //   console.log(e.offsetX, e.offsetY);
     // });
 
-    $(document).on('mousemove', $neft, function(e) {
+    $(document).on('mousemove', $map, function(e) {
       if ((state.activeObject !== null) && (isMouseOnNote(state.activeObject, e))) {
         if (!isObjectActive(state.activeObject)) {
           showObject(state.activeObject);
@@ -214,7 +214,7 @@ $(document).ready(function() {
       }
     });
 
-    $(document).on('mouseover', '.neft__caption', function(e) {
+    $(document).on('mouseover', '.map__caption', function(e) {
       var name = $(this).parent().data('target');
       if (state.activeObject == null) {
         state.activeObject = name;
@@ -302,7 +302,7 @@ $(document).ready(function() {
   };
 
   if ($(window).width() > 1200) {
-    neft = new NefteZipMap();
+    map = new NefteZipMap();
   }
 
 

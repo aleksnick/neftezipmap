@@ -1,0 +1,27 @@
+{
+  "name": "neftezip",
+  "version": "1.0.0",
+  "description": "site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksnick/neftezipmap.git"
+  },
+  "keywords": [
+    "neftezip"
+  ],
+  "author": "aleksnick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aleksnick/neftezipmap/issues"
+  },
+  "homepage": "https://github.com/aleksnick/neftezipmap#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-concat": "^2.6.1"
+  }
+}
