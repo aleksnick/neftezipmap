@@ -31,6 +31,7 @@ gulp.task('concat-js', function() {
       'public/js/jquery.maskedinput.min.js',
       'public/js/snap.svg-min.js',
       'public/js/jquery.noty.js',
+      'public/js/jquery.scrollme.min.js',
       'public/js/neftezip.js'
     ])
     .pipe(concat('source.' + package.version + '.js'))
