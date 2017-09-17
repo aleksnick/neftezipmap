@@ -20,6 +20,7 @@
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
 
 <script type="text/javascript" src="public/dst/source.1.0.0.js" ></script>
+<script type="text/javascript" src="public/js/jquery.scrollme.min.js" ></script>
 
 </head>
 <body>
@@ -340,15 +341,33 @@
 <div class="space space__sep40 visible-xs"></div>
 
 <div class="thesis">
-  <div class="container">
+  <div class="container scrollme">
     <div class="row">
-      <div class="thesis__item col-lg-4 col-xs-12">
+      <div class="thesis__item col-lg-4 col-xs-12 animateme"
+        data-when="enter"
+        data-from="0.5"
+        data-to="0"
+        data-opacity="0"
+        data-translatex="-300"
+        >
         <h3>Даём отсрочку до 90 дней</h3>
       </div>
-      <div class="thesis__item col-lg-4 col-xs-12">
+      <div class="thesis__item col-lg-4 col-xs-12 animateme"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-opacity="0"
+        data-translatey="300"
+        >
         <h3>Схема оплаты - любая удобная для вас</h3>
       </div>
-      <div class="thesis__item col-lg-4 col-xs-12">
+      <div class="thesis__item col-lg-4 col-xs-12 animateme"
+        data-when="enter"
+        data-from="0.5"
+        data-to="0"
+        data-opacity="0"
+        data-translatex="300"
+        >
         <h3>Наличие на складе популярных позиций</h3>
       </div>
     </div>
@@ -407,12 +426,21 @@
       <h2>Для кого работаем</h2>
     </div>
     
-    <div class="row">
+    <div class="row scrollme">
 
       <div class="col-lg-2"></div>
       <div class="clients__col col-lg-2 col-sm-3 col-xs-12">
         <div class="clients__item">
-          <span class="clients__icon icon__drilling_company"></span>
+          <span class="clients__icon icon__drilling_company animateme"
+            data-when="enter"
+            data-from="0.3"
+            data-to="0"
+            data-opacity="0.5"
+            data-rotatex="-60"
+            data-rotatey="-145"
+            data-rotatez="60"
+            >
+          </span>
           <div class="clients__caption">
             <h4>Буровые компании</h4>
           </div>
@@ -420,7 +448,16 @@
       </div>
       <div class="clients__col col-lg-2 col-sm-3 col-xs-12">
         <div class="clients__item">
-          <span class="clients__icon icon__extracting_company"></span>
+          <span class="clients__icon icon__extracting_company animateme"
+            data-when="enter"
+            data-from="0.6"
+            data-to="0"
+            data-opacity="0.5"
+            data-rotatex="-90"
+            data-rotatey="90"
+            data-rotatez="-90"
+            >
+          </span>
           <div class="clients__caption">
             <h4>Добывающие компании</h4>
           </div>
@@ -428,7 +465,16 @@
       </div>
       <div class="clients__col col-lg-2 col-sm-3 col-xs-12">
         <div class="clients__item">
-          <span class="clients__icon icon__oilfield_company"></span>
+          <span class="clients__icon icon__oilfield_company animateme"
+            data-when="enter"
+            data-from="0.9"
+            data-to="0"
+            data-opacity="0.5"
+            data-rotatex="90"
+            data-rotatey="60"
+            data-rotatez="90"
+            >
+          </span>
           <div class="clients__caption">
             <h4>Нефтесервисные компании</h4>
           </div>
@@ -436,7 +482,16 @@
       </div>
       <div class="clients__col col-lg-2 col-sm-3 col-xs-12">
         <div class="clients__item">
-          <span class="clients__icon icon__krc_company"></span>
+          <span class="clients__icon icon__krc_company animateme"
+            data-when="enter"
+            data-from="1.2"
+            data-to="0"
+            data-opacity="0.5"
+            data-rotatex="-90"
+            data-rotatey="90"
+            data-rotatez="-90"
+            >
+          </span>
           <div class="clients__caption">
             <h4>КРС-компании</h4>
           </div>
